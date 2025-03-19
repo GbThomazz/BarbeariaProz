@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horário</title>
+    <link rel="stylesheet" href="/CSS/Estilo.css">
+</head> 
+
+<body>
+    <h1>AGENDAMENTO DE HORÁRIO</h1><br/> 
+    <hr>
+    <p>Preencher dados do cliente:</p>
+
+    <fieldset><legend>AGENDAMENTO DE HORÁRIO</legend><br>
+
+        <form name="formclientes" method="post" onsubmit="return testa_form();" action="">
+
+            <label for="Nome">Nome:</label> *
+            <input type="text" id="nome" name="nome" style="width: 310px;"> <br><br>
+
+            <label for="data">Data do Corte:</label>
+            <input type="date" id="data" name="data"> <br><br>
+
+            Selecione a Filial:
+            <input type="radio" name="filial" value="contagem">Contagem
+            <input type="radio" name="filial" value="Betim">Betim<br><br>
+
+            <label for="cpf">CPF:</label> *
+            <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" autocomplete="off" oninput="mascaraCpf(this)" maxlength="14"> <br><br>
+
+            <label for="horario">Horário:</label>
+            <select name="horario" id="horario">
+                <option value="">SELECIONE O HORÁRIO:</option>
+                <option value="08">08:00</option>
+                <option value="08:50">08:50</option>
+                <option value="09">09:00</option>
+                <option value="09:50">09:50</option>
+                <option value="10:20">10:20</option>
+                <option value="11">11:00</option>
+                <option value="11:50">11:50</option>
+                <option value="13">13:00</option>
+                <option value="13:50">13:50</option>
+                <option value="14:20">14:20</option>
+                <option value="15">15:00</option>
+                <option value="15:50">15:50</option>
+                <option value="16:20">16:20</option>
+                <option value="17">17:00</option>
+                <option value="17:50">17:50</option>
+                <option value="18:20">18:20</option>
+                <option value="19">19:00</option>
+            </select><br><br>
+
+            <label for="profissional">Profissional:</label>
+            <select name="profissional" id="profissional">
+                <option value="">SELECIONE O PROFISSIONAL:</option>
+                <option value="Gabriel">Gabriel - Unidade Contagem</option>
+                <option value="Ana Julia">Ana Julia - Unidade Contagem</option>
+                <option value="Isadora">Isadora - Unidade Contagem</option>
+                <option value="">———————————————————————————————————————————</option>
+                <option value="Saulo">Saulo - Unidade Betim</option>
+                <option value="Leonardo">Leonardo - Unidade Betim</option>
+                <option value="João">João - Unidade Betim</option>
+            </select><br><br>
+
+            <label for="Servicos">Selecione os Serviços:</label>
+            <select name="Servicos" id="Servicos">
+                <option value="">SELECIONE O SERVIÇO:</option>
+                <option value="Corte">Corte - R$40,00</option>
+                <option value="Barba">Barba - R$20,00</option>
+                <option value="Corte+Barba">Corte + Barba - R$50,00</option>
+                <option value="Sombrancelha">Sombrancelha - R$10,00</option>
+                <option value="S+H">Selagem + Hidratação - R$75,00</option>
+                <option value="R+H">Relaxamento + Hidratação - R$45,00</option>
+                <option value="Relaxamento">Relaxamento - R$30,00</option>
+                <option value="Hidratação">Hidratação - R$20,00</option>
+                <option value="Pezinho">Pezinho - R$10,00</option>
+                <option value="Platinado">Platinado - R$110,00</option>
+                <option value="Luzes">Luzes - R$50,00</option>
+                <option value="Tintura">Tintura - R$20,00</option>
+            </select><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" autocomplete="off" oninput="mascaraTelefone(this)" maxlength="15"> <br><br>
+
+            <input type="reset" value="LIMPAR" name="limpar">
+            <input type="submit" value="ENVIAR" name="Enviar">
+            <button><a href="index.html">RETORNAR</a></button>
+        </form>
+
+    </fieldset>
+
+    <script src="JS/codigo.js"></script> <!-- Vinculando o arquivo JavaScript -->
+</body>
+</html>

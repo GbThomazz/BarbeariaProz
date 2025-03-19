@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbas</title>
+    <link rel="stylesheet" href="/CSS/Estilo.css">
+    <style>
+        /* Estilo da pagina */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        /* Cabeçalho */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Galeria de imagens em grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 imagens por linha */
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* Estilização das imagens para ficarem do mesmo tamanho */
+        .gallery img {
+            width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+            height: 250px; /* Define uma altura fixa para todas */
+            object-fit: cover; /* Faz com que as imagens preencham o espaço sem distorcer */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #f2fc8a; /* Borda amarela */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <div class="header">BARBAS</div>
+
+    <!-- Galeria de imagens -->
+    <div class="gallery">
+        <img src="/Barbas/Barba1.png" alt="Barba 1">
+        <img src="/Barbas/Barba2.png" alt="Barba 2">
+        <img src="/Barbas/Barba3.png" alt="Barba 3">
+        <img src="/Barbas/Barba4.png" alt="Barba 4">
+        <img src="/Barbas/Barba5.png" alt="Barba 5">
+        <img src="/Barbas/Barba6.png" alt="Barba 6">
+    </div>
+
+    <!-- Botões para ação no formulário -->
+<button><a href="index.html">RETORNAR</a></button>
+
+</body>
+</html>
